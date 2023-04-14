@@ -1,0 +1,5 @@
+<div class="user-card" *ngIf="user$ | async as user">
+  <h2>{{ user.login | uppercase }}</h2>
+  <a routerLink="/users">Back</a>
+  <img [src]="user.avatarUrl" [alt]="user.login" />
+</div>
